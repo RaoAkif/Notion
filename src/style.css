@@ -1,3 +1,42 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+  margin-top: 50px;
+}
+
+#panel {
+  margin: auto;
+  border: #e0e0e0 1px solid;
+  border-radius: 7px;
+  width: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#panel > nav > ul:nth-child(1) > li:nth-child(1) {
+  padding: 4px 8px;
+}
+
+ul > li {
+  /* border-right: 1px solid #e0e0e0; */
+  padding: 5px 20px;
+}
+
+li > #clock {
+  width: 20px;
+}
