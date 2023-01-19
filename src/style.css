@@ -37,6 +37,33 @@ ul > li {
   padding: 5px 20px;
 }
 
-li > #clock {
-  width: 20px;
+#time {
+  display: flex;
+  align-items: center;
+}
+
+#clock {
+  width: 15px;
+}
+
+#clock-time {
+  color: #abb0ba;
+}
+
+#editor-head {
+  margin: auto;
+  width: 50%;
+}
+
+#editor-head > h1 {
+  font-size: 35px;
+}
+
+hr {
+  border: 1px solid #e0e0e0;
+}
+
+#editor-head > p {
+  font-size: 15px;
+  color: #525252c2;
 }
