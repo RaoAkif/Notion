@@ -67,3 +67,24 @@ hr {
   font-size: 15px;
   color: #525252c2;
 }
+
+#editor {
+  margin: auto;
+  width: 50%;
+  border: none;
+}
+
+[contenteditable] {
+  content: attr(placeholder);
+  outline: 0px solid transparent;
+}
+
+[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #C5C9CF; 
+}
+
+[placeholder]:empty:focus::before {
+  content: "";
+}
+
