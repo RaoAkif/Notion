@@ -89,3 +89,76 @@ hr {
   content: attr(placeholder);
 }
 
+#t-icon {
+  width: 25px;
+}
+
+.block-title {
+  margin: 5px 0;
+}
+
+.block-desc  {
+  font-size: 11px;
+  color: #abb0ba;
+}
+
+.popup-options p {
+  color: #6e747f;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.popup {
+  width: 300px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px -1px #888888;
+  padding: 5px 10px;
+}
+
+.popup-list {
+  padding: 0.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.popup-options {
+  border: none;
+  background: white;
+  padding-left: 0;
+}
+
+.popup-options > * {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popup-options:hover,
+.popup-options:focus,
+.popup-options:active {
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.popup-list > button > div > div > h4 {
+  margin: 0;
+}
+
+.popup-list > button > div > div > p {
+  margin-bottom: 0;
+}
