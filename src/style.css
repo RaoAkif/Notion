@@ -1,3 +1,164 @@
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+body {
+  margin-top: 50px;
+}
+
+#panel {
+  margin: auto;
+  border: #e0e0e0 1px solid;
+  border-radius: 7px;
+  width: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#panel > nav > ul:nth-child(1) > li:nth-child(1) {
+  padding: 4px 8px;
+}
+
+ul > li {
+  /* border-right: 1px solid #e0e0e0; */
+  padding: 5px 20px;
+}
+
+#time {
+  display: flex;
+  align-items: center;
+}
+
+#clock {
+  width: 15px;
+}
+
+#clock-time {
+  color: #abb0ba;
+}
+
+#editor-head {
+  margin: auto;
+  width: 50%;
+}
+
+#editor-head > h1 {
+  font-size: 35px;
+}
+
+hr {
+  border: 1px solid #e0e0e0;
+}
+
+#editor-head > p {
+  font-size: 15px;
+  color: #525252c2;
+}
+
+#editor {
+  margin: auto;
+  width: 50%;
+  border: none;
+  cursor: text;
+}
+
+[contenteditable] {
+  content: attr(placeholder);
+  outline: 0px solid transparent;
+}
+
+[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #C5C9CF; 
+}
+
+[placeholder]:empty:focus::before {
+  content: attr(placeholder);
+}
+
+#t-icon {
+  width: 25px;
+}
+
+.block-title {
+  margin: 5px 0;
+}
+
+.block-desc  {
+  font-size: 11px;
+  color: #abb0ba;
+}
+
+.popup-options p {
+  color: #6e747f;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.popup {
+  width: 300px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px -1px #888888;
+  padding: 5px 10px;
+}
+
+.popup-list {
+  padding: 0.5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.popup-options {
+  border: none;
+  background: white;
+  padding-left: 0;
+}
+
+.popup-options > * {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.popup-options:hover,
+.popup-options:focus,
+.popup-options:active {
+  background-color: #f5f5f5;
+  outline: none;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.popup-list > button > div > div > h4 {
+  margin: 0;
+}
+
+.popup-list > button > div > div > p {
+  margin-bottom: 0;
+}

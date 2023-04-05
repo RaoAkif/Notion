@@ -4,10 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Page Title</title>
+  <title>Notion</title>
 </head>
 <body>
-  <h1>Hello World</h1>
-
+  <header id="panel">
+    <nav>
+      <ul>
+        <li><img id="clock" src="assets/images/p.png" alt="p icon"></li>
+        <li><span id="time"><img id="clock" src="assets/images/clock.png" alt="clock icon"><span id="clock-time">&nbsp;0min</span></span></li>
+        <li><img id="clock" src="assets/images/profile.png" alt="profile icon"></li>
+        <li><img id="clock" src="assets/images/arrow.png" alt="down-arrow icon"><span id="clock-time">&nbsp;0min</span></li>
+      </ul>
+      <ul>
+        <li><img id="clock" src="assets/images/check-mark.png" alt="check-mark icon"></li>
+        <li>☁️</li>
+        <li><img id="clock" src="assets/images/three-dots.png" alt="three-dots icon"></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="editor-head">
+      <h1>Front-end developer test project</h1>
+      <hr>
+      <p>The goal is to make an editor that has the ability to create H1 text simply by typing / then 1, then typing text, and hitting enter.</p>
+    </section>
+    <section id="editor">
+      <p id="input" contenteditable="true" placeholder="Type / for blocks, @ to link docs or people"></p>
+    </section>
+  </main>
 </body>
 </html>
